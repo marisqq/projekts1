@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+
+}
+
+:root {
+    --blue-color: #26B0D1;
+    --viloet-color-darker: rgb(231, 226, 238);
+    --violet-color-lighter: rgb(210, 206, 221);
+    --grey-darker: #434342;
+    --grey-menu: #898989;
+}
+
+header,
+footer {
+    background-color: darkgreen;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.link,
+a {
+    color: black;
+
+}
+
+.kafija {
+    color: var(--viloet-color-darker);
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    font-size: 6rem;
+    line-height: 1.2;
+
+}
+
+.bl-flex {
+    display: flex;
+
+}
+
+@media(max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+@media(max-width: 420px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+
+
+
+.bl-flex {
+    display: flex;
+
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 0 0 15px;
+
+}
+
+
+
+nav ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.submenu {
+    position: absolute;
+    min-width: 150px;
+    left: 0;
+    top: 120%;
+    padding: 0 0 10;
+    background-color: red;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+
+.submenu li {
+    margin: 0;
+    padding: 0 0 0 20px;
+
+
+}
+
+.submenu li a {
+    color: rgba(253, 253, 253, 0.8);
+    text-decoration: none;
+    line-height: 2;
+    display: block;
+}
+
+.submenu li :hover a {
+    color: black;
+    background-color: green;
+
+}
+
+.submenu li :hover {
+    background-color: darkgreen;
+
+}
+
+
+
+
+.nav_items {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+
+
+.nav_items:hover {
+    color: white;
+    background-color: red;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .header_nav_body {
+        display: none;
+    }
+
+    .nav_icon {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 25px;
+
+    }
+
+    .nav_icon::before,
+    .nav_icon ::after {
+        content: "";
+        background-color: white;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+
+    }
+
+    .nav_icon ::before {
+        top: 0;
+
+    }
+
+    .nav_icon::after {
+        bottom: 0;
+
+    }
+
+    .nav_icon:hover span {
+        transform: scale(0);
+    }
+
+
+
+
+
+    .nav_icon span {
+        background-color: #ffffff;
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        top: 11px;
+
+    }
+
+}
+
+
+.logo {
+    color: red;
+
+}
+
+.bg-top {
+    background-image: url("/img/coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.col-2 img,
+.col-3 img {
+    max-width: 100%;
+
+}
+
+.col-2,
+.col-3 {
+    margin: 30px 15px;
+
+}
+
+footer {
+    color: white;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.footer__logo {
+    flex-basis: 20%;
+}
+
+
+
+footer ul {
+    list-style: none;
+}
+
+.footer__bloki {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__col-3 {
+    flex: 1 0 0;
+}
