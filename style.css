@@ -13,6 +13,17 @@
     --grey-menu: #898989;
 }
 
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
 header,
 footer {
     background-color: darkgreen;
@@ -37,37 +48,15 @@ a {
     justify-content: start;
     font-size: 6rem;
     line-height: 1.2;
+    background-color: rgba(78, 73, 73, 0.3);
 
 }
 
 .bl-flex {
     display: flex;
-
 }
 
-@media(max-width:1200px) {
-    .container {
-        max-width: 970px;
-    }
-}
 
-@media(max-width: 992px) {
-    .container {
-        max-width: 750px;
-    }
-}
-
-@media(max-width: 767px) {
-    .container {
-        max-width: none;
-    }
-}
-
-@media(max-width: 420px) {
-    .container {
-        max-width: none;
-    }
-}
 
 
 
@@ -167,7 +156,10 @@ nav ul li:hover .submenu {
     background-color: red;
 }
 
-
+.modal-title {
+    display: flex;
+    justify-content: center;
+}
 
 
 
